@@ -3,40 +3,50 @@
   "version": "1.0.0",
   "description": "dubbo rpc plugin for egg",
   "eggPlugin": {
-    "name": "dubbo"
+    "name": "dubboRpc",
+    "dependencies": [
+      "rpc"
+    ]
   },
   "keywords": [
     "egg",
     "eggPlugin",
     "egg-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "dubbo-remoting": "^2.1.3",
+    "sofa-rpc-node": "^1.5.3"
+  },
   "devDependencies": {
-    "autod": "^3.0.0",
-    "autod-egg": "^1.0.0",
-    "egg": "^2.0.0",
-    "egg-bin": "^4.3.0",
-    "egg-mock": "^3.13.0",
-    "eslint": "^4.11.0",
-    "eslint-config-egg": "^5.1.0",
-    "webstorm-disable-index": "^1.2.0"
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.12.0",
+    "egg-bin": "^4.9.0",
+    "egg-mock": "^3.20.1",
+    "egg-rpc-base": "^1.1.0",
+    "egg-rpc-generator": "^1.1.0",
+    "eslint": "^5.8.0",
+    "eslint-config-egg": "^7.1.0",
+    "mz-modules": "^2.1.0",
+    "webstorm-disable-index": "^1.2.0",
+    "zookeeper-cluster-client": "^2.0.1"
   },
   "engines": {
     "node": ">=8.0.0"
   },
   "scripts": {
-    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
-    "test-local": "egg-bin test",
-    "cov": "egg-bin cov",
-    "lint": "eslint .",
-    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
-    "pkgfiles": "egg-bin pkgfiles",
-    "autod": "autod"
+    "autod": "autod",
+    "lint": "eslint . --ext .js",
+    "cov": "sh test/init.sh && TEST_TIMEOUT=20000 egg-bin cov",
+    "test": "npm run lint && npm run test-local",
+    "test-local": "sh test/init.sh && egg-bin test",
+    "pkgfiles": "egg-bin pkgfiles --check",
+    "ci": "npm run autod -- --check && npm run pkgfiles && npm run lint && npm run cov",
+    "contributors": "contributors -f plain -o AUTHORS"
   },
   "files": [
-    "app.js",
-    "agent.js",
-    "config"
+    "config",
+    "lib"
   ],
   "ci": {
     "version": "8, 10"
