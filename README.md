@@ -40,20 +40,6 @@ exports.dubbo = {
 };
 ```
 
-## Configuration
-
-```js
-// {app_root}/config/config.default.js
-exports.dubbo = {
-};
-```
-
-see [config/config.default.js](config/config.default.js) for more detail.
-
-## Example
-
-<!-- example here -->
-
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/eggjs/egg/issues).

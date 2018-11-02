@@ -4,7 +4,7 @@ const Controller = require('egg').Controller;
 
 class HomeController extends Controller {
   async index() {
-    this.ctx.body = 'hi, ' + this.app.plugins.dubbo.name;
+    this.ctx.body = await this.ctx.proxy.demoService.sayHello('gxcsoccer');
   }
 }
 
