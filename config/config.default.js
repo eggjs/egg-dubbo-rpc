@@ -17,18 +17,34 @@
 
 'use strict';
 
+const assert = require('assert');
 const protocol = require('dubbo-remoting');
-const DubboZookeeperRegistry = require('../lib/zk_registry');
+const DubboNacosRegistry = require('../lib/registry/nacos');
+const DubboZookeeperRegistry = require('../lib/registry/zk');
 
-exports.rpc = {
-  registryClass: DubboZookeeperRegistry,
-  client: {
-    protocol,
-  },
-  server: {
-    version: '1.0.0',
-    group: '',
-    protocol,
-    codecType: 'hessian2',
-  },
+const buildinRegistryMap = {
+  zk: DubboZookeeperRegistry,
+  nacos: DubboNacosRegistry,
+};
+
+module.exports = (appInfo, appConfig) => {
+  let registryClass = DubboZookeeperRegistry;
+  if (appConfig.rpc && appConfig.rpc.registry && appConfig.rpc.registry.type) {
+    registryClass = buildinRegistryMap[appConfig.rpc.registry.type];
+    assert(registryClass, `config.rpc.registry.type should be in [ ${Object.keys(buildinRegistryMap).map(k => '"' + k + '"')} ]`);
+  }
+  return {
+    rpc: {
+      registryClass,
+      client: {
+        protocol,
+      },
+      server: {
+        version: '1.0.0',
+        group: '',
+        protocol,
+        codecType: 'hessian2',
+      },
+    },
+  };
 };
