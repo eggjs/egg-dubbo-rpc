@@ -5,7 +5,7 @@ GEN=${PWD}/node_modules/.bin/egg-rpc-generator
 # test dir
 
 DIR=${PWD}/test/fixtures/apps
-NAMES="dubbo-rpc-test"
+NAMES="dubbo-rpc-test dubbo-nacos"
 
 for NAME in $NAMES
 do
