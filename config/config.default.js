@@ -18,7 +18,7 @@
 'use strict';
 
 const assert = require('assert');
-const protocol = require('dubbo-remoting');
+const protocol = require('js-remoting-for-apache-dubbo');
 const DubboNacosRegistry = require('../lib/registry/nacos');
 const DubboZookeeperRegistry = require('../lib/registry/zk');
 

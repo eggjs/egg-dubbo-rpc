@@ -1,4 +1,4 @@
-# egg-dubbo-rpc
+# egg-rpc-for-apache-dubbo
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -7,38 +7,38 @@
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/egg-dubbo-rpc.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-dubbo-rpc
-[travis-image]: https://img.shields.io/travis/eggjs/egg-dubbo-rpc.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-dubbo-rpc
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-dubbo-rpc.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-dubbo-rpc?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-dubbo-rpc.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-dubbo-rpc
-[snyk-image]: https://snyk.io/test/npm/egg-dubbo-rpc/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-dubbo-rpc
-[download-image]: https://img.shields.io/npm/dm/egg-dubbo-rpc.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-dubbo-rpc
+[npm-image]: https://img.shields.io/npm/v/egg-rpc-for-apache-dubbo.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/egg-rpc-for-apache-dubbo
+[travis-image]: https://img.shields.io/travis/eggjs/egg-rpc-for-apache-dubbo.svg?style=flat-square
+[travis-url]: https://travis-ci.org/eggjs/egg-rpc-for-apache-dubbo
+[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-rpc-for-apache-dubbo.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/eggjs/egg-rpc-for-apache-dubbo?branch=master
+[david-image]: https://img.shields.io/david/eggjs/egg-rpc-for-apache-dubbo.svg?style=flat-square
+[david-url]: https://david-dm.org/eggjs/egg-rpc-for-apache-dubbo
+[snyk-image]: https://snyk.io/test/npm/egg-rpc-for-apache-dubbo/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/egg-rpc-for-apache-dubbo
+[download-image]: https://img.shields.io/npm/dm/egg-rpc-for-apache-dubbo.svg?style=flat-square
+[download-url]: https://npmjs.org/package/egg-rpc-for-apache-dubbo
 
 Dubbo RPC plugin for Egg.js
 
 ## Install
 
 ```bash
-$ npm i egg-dubbo-rpc --save
+$ npm i egg-rpc-for-apache-dubbo --save
 ```
 
 ## Usage
 
 ### 1. Enable the Plugin
 
-enable egg-dubbo-rpc plugin in ${app_root}/config/plugin.js:
+enable egg-rpc-for-apache-dubbo plugin in ${app_root}/config/plugin.js:
 
 ```js
 // {app_root}/config/plugin.js
 exports.dubboRpc = {
   enable: true,
-  package: 'egg-dubbo-rpc',
+  package: 'egg-rpc-for-apache-dubbo',
 };
 ```
 
@@ -287,7 +287,7 @@ For more details of app.rpcRequest, you can refer to this [acticle](https://gith
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/dubbo/egg-dubbo-rpc/issues).
+Please open an issue [here](https://github.com/dubbo/egg-rpc-for-apache-dubbo/issues).
 
 ## License
 
