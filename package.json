@@ -1,6 +1,6 @@
 {
   "name": "egg-dubbo-rpc",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "dubbo rpc plugin for egg",
   "eggPlugin": {
     "name": "dubboRpc",

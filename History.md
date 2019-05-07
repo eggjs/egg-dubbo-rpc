@@ -1,4 +1,10 @@
 
+1.2.1 / 2019-05-07
+==================
+
+**fixes**
+  * [[`c8ca0de`](http://github.com/eggjs/egg-rpc-for-apache-dubbo/commit/c8ca0de5c95f8d9d741d450f0a623a2856008e8f)] - fix: support config nacos namespace (gxcsoccer <<gxcsoccer@126.com>>)
+
 1.2.0 / 2019-05-07
 ==================
 
