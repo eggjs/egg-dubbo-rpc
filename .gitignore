@@ -72,3 +72,7 @@ typings/
 run
 test/fixtures/apps/**/proxy
 test/fixtures/apps/**/proxy_class
+test/fixtures/apps/**/src
+test/fixtures/apps/**/pom.xml
+test/fixtures/apps/**/target/
+test/fixtures/apps/**/config/apiMeta.json
