@@ -1,4 +1,13 @@
 
+1.2.0 / 2019-05-07
+==================
+
+**features**
+  * [[`1ca7188`](http://github.com/eggjs/egg-rpc-for-apache-dubbo/commit/1ca7188808564d0f2b131ce8cda892a4880bb2d4)] - feat: support nacos server v1.0.0 (gxcsoccer <<gxcsoccer@126.com>>)
+
+**others**
+  * [[`5cba366`](http://github.com/eggjs/egg-rpc-for-apache-dubbo/commit/5cba366a88e1a13d8e66d97e810c32467b297fbb)] - chore: change name to egg-rpc-for-apache-dubbo (gxcsoccer <<gxcsoccer@126.com>>)
+
 1.1.0 / 2019-01-17
 ==================
 
